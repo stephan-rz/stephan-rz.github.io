@@ -829,6 +829,13 @@ h1.vlt-large-heading {
     font-weight: 600
 }
 
+@media (max-width:600px) {
+    .h1.vlt-large-heading,
+    h1.vlt-large-heading {
+        font-size: 4.5rem;
+    }
+}
+
 .h2,
 h2 {
     font-size: 4rem
