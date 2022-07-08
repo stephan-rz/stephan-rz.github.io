@@ -49,7 +49,6 @@
 .grid-item figure{
     position:relative;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .grid-item figure img{
@@ -141,7 +140,7 @@ figcaption .sub-title{
 
 figure:hover figcaption{
     color: white;
-    background: rgba(11,206,175,0.9);
+    background: rgba(239, 41, 41, 0.8);
 }
 
 .grid-item figure:hover figcaption::after{
