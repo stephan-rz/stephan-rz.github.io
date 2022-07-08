@@ -1,0 +1,172 @@
+.section-title{
+    margin-bottom: 60px;
+}
+
+.section-title h3{
+    color: white;
+
+}
+
+.portfolio-nav{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-nav ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    float: none;
+}
+
+.portfolio-nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.portfolio-nav ul li:hover{
+    color: red;
+}
+
+.portfolio-nav ul li:active{
+    color: red;
+}
+
+.portfolio-nav ul li span{
+    padding: 15px 0;
+    border-bottom:2px solid transparent;
+}
+
+.portfolio-nav ul li.current span{
+    border-bottom:2px solid red;
+}
+
+.grid-item figure{
+    position:relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-item figure img{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.grid-item figure figcaption{
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+    color: white;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid-item figure figcaption::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.4s ease-out;
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotateZ(0) rotate(0deg) scale(0.95);
+}
+
+.grid-item figure figcaption .fa{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: -22px;
+    transform: translateX(0px) translateY(0) rotateZ(0) rotate(0deg) scale(1);
+    opacity: 0;
+    letter-spacing: 0px;
+}
+
+figcaption .title{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    transform: translateX(80px) translateY(0) rotateZ(0) rotate(0deg) scale(1);
+    opacity: 0;
+    transition: all .4s ease-out;
+    letter-spacing: 0px;
+}
+
+figcaption .sub-title{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    transform: translateX(-70px) translateY(0) rotateZ(0) rotate(0deg) scale(1);
+    opacity: 0;
+    transition: .5s;
+    letter-spacing: 0px;
+}
+
+.grid-item figure:hover{
+    transform: all 0.4s ease-out;
+}
+
+figure:hover figcaption{
+    color: white;
+    background: rgba(11,206,175,0.9);
+}
+
+.grid-item figure:hover figcaption::after{
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotateZ(0) rotate(0deg) scale(1);
+    transition: all .4s ease-out;
+}
+
+.grid-item figure:hover figcaption .fa{
+    transform: translateX(0) translateY(0) rotateZ(0) rotate(0deg) scale(1);
+    transition: .2s;
+    opacity: 1;
+}
+
+.grid-item figure:hover figcaption .title{
+    transform: translateX(0) translateY(0) rotateZ(0) rotate(0deg) scale(1);
+    transition: .4s;
+    margin-top: -20px;
+    opacity: 1;
+}
+
+.grid-item figure:hover figcaption .sub-title{
+    transform: translateX(0) translateY(0) rotateZ(0) rotate(0deg) scale(1);
+    transition: .4s;
+    opacity: 1;
+}
+
+
