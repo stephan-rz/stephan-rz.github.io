@@ -1,3 +1,7 @@
+:root{
+    --theme-color:#cf000f;
+}
+
 .section-title{
     margin-bottom: 60px;
 }
@@ -15,8 +19,8 @@
 }
 
 .portfolio-nav ul{
-    list-style: none;
-    margin: 0 auto;
+    margin-right: 5px;
+    margin-bottom: 10px;
     padding: 0;
     text-align: center;
     float: none;
@@ -26,24 +30,24 @@
     display: inline-block;
     margin: 0 10px;
     cursor: pointer;
+    padding: 5px 20px;
     color: white;
+    margin-bottom: 25px;
+
 }
 
 .portfolio-nav ul li:hover{
-    color: red;
+    background-color: var(--theme-color);
 }
 
-.portfolio-nav ul li:active{
-    color: red;
+.portfolio-nav ul li.current{
+    background-color: var(--theme-color);
 }
+
 
 .portfolio-nav ul li span{
     padding: 15px 0;
     border-bottom:2px solid transparent;
-}
-
-.portfolio-nav ul li.current span{
-    border-bottom:2px solid red;
 }
 
 .grid-item figure{
@@ -140,7 +144,7 @@ figcaption .sub-title{
 
 figure:hover figcaption{
     color: white;
-    background: rgba(239, 41, 41, 0.8);
+    background: rgba(239, 41, 41, 0.9);
 }
 
 .grid-item figure:hover figcaption::after{
