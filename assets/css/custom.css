@@ -173,3 +173,18 @@ figure:hover figcaption{
 }
 
 
+.container .row .img-col{
+    display: flex;
+    align-items: center;
+}
+
+.container .row .img-col img{
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+#particles-js{
+    height: 100%;
+    background-color: black;
+
+}
