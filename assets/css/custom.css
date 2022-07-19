@@ -221,7 +221,7 @@ figure:hover figcaption{
         margin-left: -1.5em;
     }
 
-    .vlt-video-button a{
+    .vlt-video-button{
         position: absolute;
         top: 70px;
         right: -40px;
