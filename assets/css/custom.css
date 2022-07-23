@@ -139,6 +139,7 @@ figcaption .sub-title{
 }
 
 .grid-item figure:hover{
+    cursor: pointer;
     transform: all 0.4s ease-out;
 }
 
