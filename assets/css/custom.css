@@ -229,3 +229,11 @@ figure:hover figcaption{
 
     }
 }
+
+
+@media(min-width: 1501px){
+.sf-menu{
+    display: flex;
+    justify-content: center;
+}
+}
